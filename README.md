@@ -901,3 +901,24 @@ function endGame() {
 
 # 植物识别小游戏 - 第二步
 当前已经在本地成功搭建了网站并且能够正常运行，接下来需要把这个网站搬到github上
+
+下面这一步的目标是：**把我本地做好的植物识别小游戏发布到 GitHub Pages，让别人可以通过网址访问**。
+
+按顺序做：
+
+```text
+1. 检查 index.html 是否在项目根目录
+2. 登录 GitHub
+3. 创建 plant-game 仓库
+4. 上传 index.html、style.css、script.js、images 文件夹
+5. Commit changes
+6. 进入 Settings
+7. 进入 Pages
+8. Source 选 Deploy from a branch
+9. Branch 选 main，文件夹选 / root
+10. Save
+11. 等待 GitHub Pages 生成网址
+12. 打开网址测试游戏
+```
+
+完成这一步后，我的植物识别小游戏就可以通过公开链接访问。
