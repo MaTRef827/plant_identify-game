@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>植物识别小游戏</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div>
+        <p class="eyebrow">Plant Guessing Game</p>
+        <h1>植物识别小游戏</h1>
+        <p class="subtitle">
+          看图识植物，测试你对常见植物物种的辨认能力。
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-card">
+      <div class="image-panel" aria-label="植物图片展示区域">
+        <div class="plant-placeholder">
+          <span class="leaf-icon">☘</span>
+          <img id="plantImage" class="plant-image" src="images/cover.jpg" alt="植物识别小游戏封面图">
+        </div>
+      </div>
+
+        <div class="question-area">
+          <p class="question-text">这张图片中的植物是？</p>
+
+          <div class="input-area">
+            <input
+              id="answerInput"
+              class="answer-input"
+              type="text"
+              placeholder="请输入植物物种名称"
+              autocomplete="off"
+            />
+
+            <button id="submitAnswerButton" class="submit-button" type="button">
+              提交答案
+            </button>
+          </div>
+
+          <p class="input-tip">
+            提示：请输入完整的物种名称。
+          </p>
+        </div>
+
+        <div class="score-board">
+          <p id="scoreText">当前得分：0</p>
+          <p id="progressText">答题进度：0 / 0</p>
+        </div>
+        
+        <button id="startButton" class="primary-button" type="button">
+          开始游戏
+        </button>
+
+        <p id="statusText" class="status-text">
+          当前状态：网页已加载，答题功能将在下一步加入。
+        </p>
+      </div>
+    </section>
+
+    <section class="info-grid" aria-label="项目功能规划">
+      <article class="info-card">
+        <h3>第一步</h3>
+        <p>制作普通网页，确定基本视觉结构。</p>
+      </article>
+
+      <article class="info-card">
+        <h3>第二步</h3>
+        <p>加入植物图片和候选答案按钮。</p>
+      </article>
+
+      <article class="info-card">
+        <h3>第三步</h3>
+        <p>使用 JavaScript 判断答案并计算分数。</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 植物识别小游戏 · Web Demo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
